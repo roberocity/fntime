@@ -2,19 +2,11 @@
 fntime provides a simple method for calculating how many times a
 function can be executing within a number of seconds.
 
-This is intented to test functions that already execute quickly. 
+This is intented to test functions that already execute quickly.
 
 The method under test will be run at least twice. The first run
 is before the time interval start. Once the time interval starts the
-function will be run until the time period expires. 
-
-Install the library
-
-```bash
-$ pip install fntime
-```
-
-Use the library
+function will be run until the time period expires.
 
 ```python
 from fntime import time_function
@@ -44,5 +36,4 @@ execution_count, name, _, _ = time_function(3, fn, 4, 5, method_name='mult lambd
 ```
 
 The value returned in run_time will be the actual time that the executions took.
-The function will always be run once during the timed portion. 
-
+The function will always be run once during the timed portion.
